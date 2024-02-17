@@ -76,8 +76,8 @@ document.getElementById("search-form").onsubmit = async (e) => {
 
   pokemonName.textContent = data.name.toUpperCase();
   pokemonID.textContent = `#${data.id}`;
-  pokemonWeight.innerHTML = `<b>Weight</b> ${data.weight}`;
-  pokemonHeight.innerHTML = `<b>Height</b> ${data.height}`;
+  pokemonWeight.innerHTML = `<b>Weight:</b> ${data.weight}`;
+  pokemonHeight.innerHTML = `<b>Height:</b> ${data.height}`;
   pokemonSprite.innerHTML = `<img id="sprite" src="${data.sprites.front_default}" alt="${data.name}" />`;
   pokemonHP.textContent = `${data.stats[0].base_stat}`;
   pokemonAttack.textContent = `${data.stats[1].base_stat}`;
