@@ -1,0 +1,208 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  color: #cf1414;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 10px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1.6em;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(255, 254, 254, 0.652);
+  gap: 2em;
+  background-color: rgb(255, 255, 255);
+}
+
+.label-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #000000;
+}
+
+#search-form input {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  transition: 0.5s ease-in-out;
+}
+
+#search-form input:focus {
+  background-color: #000000;
+  color: #cf1414;
+  font-weight: 600;
+}
+
+form label {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+button {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  background-color: #cf1414;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #cf1414;
+  font-weight: 700;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(247, 243, 243);
+  padding: 2em 4.4em;
+  border-radius: 10px;
+  color: #000000;
+}
+
+.top-content > .first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#sprite-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#pokemon-name {
+  font-weight: 700;
+}
+
+.size {
+  font-size: 0.75em;
+}
+
+#types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.7em;
+  gap: 2em;
+  color: #ffffff;
+}
+
+#types > .type {
+  border-radius: 5px;
+  padding: 0.7em 1em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.loading-container {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #cf1414;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  display: none;
+}
+
+.empty-text {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.bottom-container{
+  padding-top: 1em;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th {
+  background-color: #cf1414;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-weight: 700;
+  padding: 0.5em;
+}
+
+td {
+  border: 1px solid #000000;
+  padding: 0.5em;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #f1e7e7;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

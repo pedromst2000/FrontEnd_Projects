@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search App</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/color/48/000000/pokeball-2.png"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="poke-title">Pokemon Search App</h1>
+      <div id="container">
+        <form role="search" id="search-form">
+          <div class="label-form-container">
+            <label for="search-input">Search for Pokémon Name or ID:</label>
+          </div>
+          <div class="search-form-container">
+            <input type="text" name="pokemon" id="search-input" required />
+            <button type="submit" id="search-button">Search</button>
+          </div>
+        </form>
+        <div class="output">
+          <div class="top-container">
+            <div class="top-content">
+              <div class="empty-message-container">
+                <p class="empty-text">Pokemon to display</p>
+              </div>
+              <div class="loading-container">
+                <span class="loading"></span>
+              </div>
+              <div class="first-section">
+                <div class="name-and-id">
+                  <span id="pokemon-name"></span>
+                  <span id="pokemon-id"></span>
+                </div>
+                <div class="size">
+                  <span id="weight"></span>
+                  <span id="height"></span>
+                </div>
+              </div>
+              <div class="second-section">
+                <div id="sprite-container" class="sprite-container"></div>
+              </div>
+              <div class="third-section">
+                <div id="types"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-container">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Base</th>
+                  <th>Stats</th>
+                </tr>
+                <tr>
+                  <td>HP</td>
+                  <td id="hp"></td>
+                </tr>
+                <tr>
+                  <td>Attack</td>
+                  <td id="attack"></td>
+                </tr>
+                <tr>
+                  <td>Defense</td>
+                  <td id="defense"></td>
+                </tr>
+                <tr>
+                  <td>Special Attack</td>
+                  <td id="special-attack"></td>
+                </tr>
+                <tr>
+                  <td>Special Defense</td>
+                  <td id="special-defense"></td>
+                </tr>
+                <tr>
+                  <td>Speed</td>
+                  <td id="speed"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
