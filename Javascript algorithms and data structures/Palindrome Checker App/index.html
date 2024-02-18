@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Is it a Palindrome ?</h1>
+      <div class="palindrome-container">
+        <form role="form" id="palindrome-form">
+          <label for="text-input"
+            >Enter in text to check for a palindrome:</label
+          >
+          <div class="input-section">
+            <input type="text" id="text-input" />
+            <button type="submit" id="check-btn">Check</button>
+          </div>
+          <div id="result" style="display: none"></div>
+        </form>
+      </div>
+      <div class="tips-container">
+        <span class="emoji" role="img" aria-label="idea">💡</span>
+        <span class="tips-content">
+          <span class="tips-text"
+            >A palindrome is a word, phrase, number, or other sequence of
+            characters that reads the same forward and backward, ignoring
+            spaces, punctuation, and spacing.
+          </span>
+        </span>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

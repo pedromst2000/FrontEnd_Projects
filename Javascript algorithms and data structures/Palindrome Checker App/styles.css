@@ -1,0 +1,117 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #151414;
+  color: #fff;
+}
+
+h1.title {
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+main.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   padding: 5em;
+   gap: 2em;
+}
+
+.palindrome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#palindrome-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    margin: 20px 0;
+    background-color: #fff;
+    color: #000;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(179, 222, 222, 0.955);
+}
+
+.input-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.7em;
+}
+
+input[type="text"]{
+    padding: .5em 2em;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 1.2em;
+    transition: all .3s ease;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    color: #000000;
+    border-bottom: 3.5px solid #000000;
+    font-weight: bold;
+}
+
+button[type="submit"]{
+    padding: .5em 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button[type="submit"]:hover{
+    background-color: #fff;
+    border:1px solid #000000;
+    color: #000000;
+}
+
+#result{
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.tips-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #309956;
+    width: 50%;
+    border-radius: 10px;
+    gap: 0.6em;
+    padding: 1.5em 1em;
+}
+
+.tips-content{
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 160%;
+    width: 100%;
+}
+
+.emoji{
+    font-size: 1.7em;
+}
