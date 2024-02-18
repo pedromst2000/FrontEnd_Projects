@@ -11,6 +11,12 @@ const getPokemon = async (pokemon) => {
     const response = await fetch(
       `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemon}`
     );
+
+    /**
+     * @constant {object} data - The Pokémon data
+     * @description - The Pokémon data fetched from the PokéAPI
+     */
+
     const data = await response.json();
     console.log(data);
 
@@ -38,6 +44,29 @@ document.getElementById("search-form").onsubmit = async (e) => {
   const pokemonTypes = document.getElementById("types");
   const emptyText = document.querySelector(".empty-text");
 
+  /**
+   * @constant {object} typeColors - The colors for each Pokémon type
+   * @description - The colors for each Pokémon type
+   * @property {string} normal - The color for the normal type
+   * @property {string} fire - The color for the fire type
+   * @property {string} water - The color for the water type
+   * @property {string} electric - The color for the electric type
+   * @property {string} grass - The color
+   * @property {string} ice - The color for the ice type
+   * @property {string} fighting - The color for the fighting type
+   * @property {string} poison - The color for the poison type
+   * @property {string} ground - The color for the ground type
+   * @property {string} flying - The color for the flying type
+   * @property {string} psychic - The color for the psychic type
+   * @property {string} bug - The color for the bug type
+   * @property {string} rock - The color for the rock type
+   * @property {string} ghost - The color for the ghost type
+   * @property {string} dragon - The color for the dragon type
+   * @property {string} dark - The color for the dark type
+   * @property {string} steel - The color for the steel type
+   * @property {string} fairy - The color for the fairy type
+   * @returns {object} - The colors for each Pokémon type
+   */
   const typeColors = [
     {
       normal: "#A8A77A",
