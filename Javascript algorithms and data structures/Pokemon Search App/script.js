@@ -1,3 +1,11 @@
+/**
+ * @async
+ * @function getPokemon
+ * @description - Fetches Pokémon data from the PokéAPI
+ * @param {string} pokemon - The name of the Pokémon to search for
+ * @returns {object} - The Pokémon data
+ */
+
 const getPokemon = async (pokemon) => {
   try {
     const response = await fetch(
