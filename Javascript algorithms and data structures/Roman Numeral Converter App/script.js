@@ -1,7 +1,15 @@
 /**
- * Convert the given number into a roman numeral.
+ * @function convertToRoman - Convert the given number into a roman numeral.
+ * @description - This function takes a number and converts it into a roman numeral.
  * @param {number} num - The number to convert.
  * @returns {string} - The converted number.
+ * @example
+ * convertToRoman(2) // "II"
+ * convertToRoman(3) // "III"
+ * convertToRoman(435) // "CDXXXV"
+ * convertToRoman(4300) // "Please enter a number less than or equal to 3999"
+ * convertToRoman(-1) // "Please enter a number greater than or equal to 1"
+ * convertToRoman("hello") // "Please enter a valid number"
  */
 
 const convertToRoman = (num) => {
@@ -42,51 +50,60 @@ const convertToRoman = (num) => {
 
     return result;
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return error.message;
   }
 };
 
-document.getElementById("roman-form").onsubmit = (e) => {
-  e.preventDefault();
-  const num = document.getElementById("number").value;
-  const output = document.getElementById("output");
 
-  // get the error message
-  const errorMessage = convertToRoman(num);
+console.log(convertToRoman(2)); // "II"
+console.log(convertToRoman(3)); // "III"
+console.log(convertToRoman(435)); // "CDXXXV"
+console.log(convertToRoman(4300)); // "Please enter a number less than or equal to 3999"
+console.log(convertToRoman(-1)); // "Please enter a number greater than or equal to 1"
+console.log(convertToRoman("hello")); // "Please enter a valid number"
 
-  if (
-    errorMessage === "Please enter a valid number" ||
-    errorMessage === "Please enter a number greater than or equal to 1" ||
-    errorMessage === "Please enter a number less than or equal to 3999"
-  ) {
-    output.innerHTML = errorMessage;
-    output.style.opacity = 1;
-    output.style.backgroundColor = "#ff4d4d";
-    output.animate([{ opacity: 0 }, { opacity: 1 }], {
-      // timing options
-      duration: 550,
-    });
 
-    setTimeout(() => {
-      output.style.opacity = 0;
-      output.animate([{ opacity: 1 }, { opacity: 0 }], {
-        duration: 550,
-      });
-    }, 2500);
-  } else {
-    output.innerHTML = convertToRoman(num);
-    output.style.opacity = 1;
-    output.style.backgroundColor = "rgb(113, 116, 144)";
-    output.animate([{ opacity: 0 }, { opacity: 1 }], {
-      duration: 550,
-    });
+// document.getElementById("roman-form").onsubmit = (e) => {
+//   e.preventDefault();
+//   const num = document.getElementById("number").value;
+//   const output = document.getElementById("output");
 
-    setTimeout(() => {
-      output.style.opacity = 0;
-      output.animate([{ opacity: 1 }, { opacity: 0 }], {
-        duration: 550,
-      });
-    }, 5000);
-  }
-};
+//   // get the error message
+//   const errorMessage = convertToRoman(num);
+
+//   if (
+//     errorMessage === "Please enter a valid number" ||
+//     errorMessage === "Please enter a number greater than or equal to 1" ||
+//     errorMessage === "Please enter a number less than or equal to 3999"
+//   ) {
+//     output.innerHTML = errorMessage;
+//     output.style.opacity = 1;
+//     output.style.backgroundColor = "#ff4d4d";
+//     output.animate([{ opacity: 0 }, { opacity: 1 }], {
+//       // timing options
+//       duration: 550,
+//     });
+
+//     setTimeout(() => {
+//       output.style.opacity = 0;
+//       output.animate([{ opacity: 1 }, { opacity: 0 }], {
+//         duration: 550,
+//       });
+//     }, 2500);
+//   } else {
+//     output.innerHTML = convertToRoman(num);
+//     output.style.opacity = 1;
+//     output.style.backgroundColor = "rgb(113, 116, 144)";
+//     output.animate([{ opacity: 0 }, { opacity: 1 }], {
+//       duration: 550,
+//     });
+
+//     setTimeout(() => {
+//       output.style.opacity = 0;
+//       output.animate([{ opacity: 1 }, { opacity: 0 }], {
+//         duration: 550,
+//       });
+//     }, 5000);
+//   }
+// };
