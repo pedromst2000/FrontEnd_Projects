@@ -1,4 +1,5 @@
 /**
+ * @function isPalindrome
  * @description This function checks if the given string is a palindrome or not
  * @param {string} str
  * @returns {boolean}
