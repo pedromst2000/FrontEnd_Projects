@@ -4,6 +4,7 @@
  * @description - Fetches Pokémon data from the PokéAPI
  * @param {string} pokemon - The name of the Pokémon to search for
  * @returns {object} - The Pokémon data
+ * @throws {Error} - An error message if the Pokémon is not found
  */
 
 const getPokemon = async (pokemon) => {
