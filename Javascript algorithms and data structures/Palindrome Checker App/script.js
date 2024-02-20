@@ -11,9 +11,13 @@
 
 const isPalindrome = (str) => {
   /**
-   * Explanation of the Regular Expression
-   * [\W_] matches any non-word character and underscore
-   * g is a global flag meaning it will match all occurrences
+   * @constant regex
+   * @description The pattern checks for the following:
+   * - \W: Matches any non-word character
+   * - _: Matches the underscore character
+   * - g: global search
+   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+   * @type {RegExp}
    */
   const regex = /[\W_]/g;
   const lowerCaseStr = str.toLowerCase().replace(regex, "");
