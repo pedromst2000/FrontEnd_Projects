@@ -1,5 +1,5 @@
 /**
- * @function checkPhoneUSnumber
+ * @function isValidPhoneUSnumber
  * @description: A function that checks if a phone number is a valid US phone number.
  * @param {string} phoneNumber - The phone number to be checked.
  * @returns {boolean} - Returns true if the phone number is a valid US phone number, otherwise returns false.
@@ -11,24 +11,19 @@
  * checkPhoneUSnumber('1-555-555-55555') // returns false
  */
 
-const checkPhoneUSnumber = (phoneNumber) => {
+const isValidPhoneUSnumber = (phoneNumber) => {
   /**
    * @constant phonePattern
    * @description: A regular expression pattern that checks if a phone number is a valid US phone number.
    * @description: The pattern checks for the following:
-   * 1. The phone number can start with 1- or not.
-   * 2. The phone number must have 3 digits followed by a hyphen.
-   * 3. The phone number must have another 3 digits followed by a hyphen.
-   * 4. The phone number must have 4 digits.
+   * 1. The phone number can start with 1 followed by an optional space.
+   * 2. The phone number can have an optional area code in the format (555) or 555.
+   * 3. The phone number can have an optional space or dash separator.
    * @type {RegExp}
-   * @example
-   * phonePattern.test('555-555-5555') // returns true
-   * phonePattern.test('1-555-555-5555') // returns true
-   * phonePattern.test('5555-555-5555') // returns false
-   * phonePattern.test('1-555-555-555') // returns false
+   * @see:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
    */
 
-  const phonePattern = /^(1-)?\d{3}-\d{3}-\d{4}$/;
+  const phonePattern = /^(1\s?)?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
 
   return phonePattern.test(phoneNumber);
 };
@@ -44,18 +39,22 @@ document.getElementById("phone-form").onsubmit = (e) => {
     return;
   }
 
-  if (checkPhoneUSnumber(phoneNumber)) {
+  if (isValidPhoneUSnumber(phoneNumber)) {
+    // clearing the input field
+    document.getElementById("user-input").value = "";
     results.innerHTML += `
-      <div>
-            <span>Valid US phone number:</span><b>${phoneNumber}</b>
-
-      </div>  
+           Valid US number:  <b>${phoneNumber}</b>
       `;
+    results.style.color = "green";
   } else {
-    results.innerHTML = `
-      <div>
-            <span>Invalid US phone number:</span><b>${phoneNumber}</b>
-      </div>
+    document.getElementById("user-input").value = "";
+    results.innerHTML += `
+            Invalid US number:  <b>${phoneNumber}</b>
     `;
+    results.style.color = "red";
   }
+};
+
+document.getElementById("clear-btn").onclick = () => {
+  document.getElementById("results-div").innerHTML = "";
 };
