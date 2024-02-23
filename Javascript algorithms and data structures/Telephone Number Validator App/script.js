@@ -25,8 +25,10 @@ const isValidPhoneUSnumber = (phoneNumber) => {
 
   const phonePattern = /^(1\s?)?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
 
+  console.log(phonePattern.test(phoneNumber));
   return phonePattern.test(phoneNumber);
 };
+
 
 document.getElementById("phone-form").onsubmit = (e) => {
   const phoneNumber = document.getElementById("user-input").value;
@@ -39,20 +41,25 @@ document.getElementById("phone-form").onsubmit = (e) => {
     return;
   }
 
-  if (isValidPhoneUSnumber(phoneNumber)) {
-    // clearing the input field
-    document.getElementById("user-input").value = "";
-    results.innerHTML += `
-           Valid US number:  <b>${phoneNumber}</b>
-      `;
-    results.style.color = "green";
-  } else {
-    document.getElementById("user-input").value = "";
-    results.innerHTML += `
-            Invalid US number:  <b>${phoneNumber}</b>
-    `;
-    results.style.color = "red";
-  }
+  document.getElementById("user-input").value = "";
+  results.innerHTML += isValidPhoneUSnumber(phoneNumber)
+    ? `Valid US number:  <b>${phoneNumber}</b>`
+    : `Invalid US number:  <b>${phoneNumber}</b>`;
+
+  // if (isValidPhoneUSnumber(phoneNumber)) {
+  //   // clearing the input field
+  //   document.getElementById("user-input").value = "";
+  //   results.innerHTML += `
+  //          Valid US number:  <b>${phoneNumber}</b>
+  //     `;
+  //   results.style.color = "green";
+  // } else {
+  //   document.getElementById("user-input").value = "";
+  //   results.innerHTML += `
+  //           Invalid US number:  <b>${phoneNumber}</b>
+  //   `;
+  //   results.style.color = "red";
+  // }
 };
 
 document.getElementById("clear-btn").onclick = () => {

@@ -34,21 +34,23 @@ const convertToRoman = (num) => {
    * @property {number} I - 1
    */
 
-  const romanNumeral = {
-    M: 1000,
-    CM: 900,
-    D: 500,
-    CD: 400,
-    C: 100,
-    XC: 90,
-    L: 50,
-    XL: 40,
-    X: 10,
-    IX: 9,
-    V: 5,
-    IV: 4,
-    I: 1,
-  };
+  const romanNumeral = [
+    {
+      M: 1000,
+      CM: 900,
+      D: 500,
+      CD: 400,
+      C: 100,
+      XC: 90,
+      L: 50,
+      XL: 40,
+      X: 10,
+      IX: 9,
+      V: 5,
+      IV: 4,
+      I: 1,
+    },
+  ];
 
   let result = "";
 
@@ -62,12 +64,14 @@ const convertToRoman = (num) => {
       throw new Error("Please enter a number less than or equal to 3999");
     }
 
-    for (let key in romanNumeral) {
-      while (num >= romanNumeral[key]) {
-        result += key;
-        num -= romanNumeral[key];
+    romanNumeral.forEach((key) => {
+      for (let i in key) {
+        while (num >= key[i]) {
+          result += i;
+          num -= key[i];
+        }
       }
-    }
+    });
 
     return result;
   } catch (error) {
@@ -75,13 +79,6 @@ const convertToRoman = (num) => {
     return error.message;
   }
 };
-
-console.log(convertToRoman(2)); // "II"
-console.log(convertToRoman(3)); // "III"
-console.log(convertToRoman(435)); // "CDXXXV"
-console.log(convertToRoman(4300)); // "Please enter a number less than or equal to 3999"
-console.log(convertToRoman(-1)); // "Please enter a number greater than or equal to 1"
-console.log(convertToRoman("hello")); // "Please enter a valid number"
 
 document.getElementById("roman-form").onsubmit = (e) => {
   e.preventDefault();
