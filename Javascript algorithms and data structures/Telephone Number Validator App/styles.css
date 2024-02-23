@@ -68,7 +68,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   gap: 2em;
-  margin: 1em;
+  margin-top: -1em;
 }
 
 .phone-background {
@@ -92,12 +92,21 @@ h1 {
 }
 
 #results-div {
+  height: auto;
+  width: 120px;
+  padding: 1em;
+  line-height: 1.5em;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.results-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  gap: 1em;
+  padding: 1em;
 }
 
 #check-btn {
@@ -124,4 +133,16 @@ h1 {
 #user-input {
   border-radius: 1em;
   padding: 0.4em;
+}
+
+.valid-phone {
+  width: 150%;
+  text-align: center;
+  color: #1e7615ea;
+}
+
+.invalid-phone {
+  color: #b33131;
+  width: 160%;
+  text-align: center;
 }
