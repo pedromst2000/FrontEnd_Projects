@@ -11,6 +11,20 @@
  */
 
 const rot13 = (str) => {
+  /**
+   * @constant decoded
+   * @description Explanation of the regular expression:
+   * * [A-Z] - Match any uppercase letter from A to Z.
+   * * g - Global search. The regular expression will test the string for all occurrences of the pattern.
+   * * (char) - The character that is matched by the regular expression.
+   * * char.charCodeAt(0) - Returns the Unicode value of the character at the specified index (0).
+   * * % 26 - The remainder of the Unicode value divided by 26 (the number of letters in the English alphabet).
+   * * + 65 - Add 65 to the remainder to get the Unicode value of the decoded character.
+   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
+   * @returns {String} The decoded string.
+   */
+
   const decoded = str.replace(/[A-Z]/g, (char) => {
     return String.fromCharCode((char.charCodeAt(0) % 26) + 65);
   });
