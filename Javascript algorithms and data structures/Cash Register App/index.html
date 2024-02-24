@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cash Register App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="title-container">
+        <h1>Cash Register</h1>
+      </div>
+      <div id="change-due">
+      </div>
+      <div class="form-container">
+        <form role="form" id="cashier-form">
+          <label for="cash">Enter cash from customer:</label>
+          <input type="number" step="0.01" id="cash" />
+          <button type="submit" id="purchase-btn">Purchase</button>
+        </form>
+      </div>
+      <div class="cashier-container">
+        <div class="price-screen-container">
+          <div id="price"></div>
+        </div>
+        <div class="connector"></div>
+        <div class="top-cashier">
+          <div class="left-top">
+            <div class="btns-container">
+              <div class="btn">1</div>
+              <div class="btn">2</div>
+              <div class="btn">3</div>
+              <div class="btn">4</div>
+              <div class="btn">5</div>
+              <div class="btn">6</div>
+              <div class="btn">7</div>
+              <div class="btn">8</div>
+              <div class="btn">9</div>
+            </div>
+          </div>
+          <div class="right-top">
+            <div class="cashier-drawer-change display"></div>
+          </div>
+        </div>
+        <div class="bottom-cashier-container">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </main>
 
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
