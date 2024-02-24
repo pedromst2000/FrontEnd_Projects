@@ -22,7 +22,6 @@ const isPalindrome = (str) => {
 };
 
 console.log(isPalindrome("eye")); // true
-console.log(isPalindrome("race car")) // true
-console.log(isPalindrome("five|_/|four")) // false
-console.log(isPalindrome("1 eye for 1 eye")) // false
-
+console.log(isPalindrome("race car")); // true
+console.log(isPalindrome("five|_/|four")); // false
+console.log(isPalindrome("1 eye for 1 eye")); // false
