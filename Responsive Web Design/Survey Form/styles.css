@@ -1,0 +1,308 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("https://res.cloudinary.com/dvthg2763/image/upload/v1709069218/bgImage_erembi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Verdana", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+#title > .linear {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#description {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2em 4em;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 2em;
+}
+
+.input-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.input-email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.input-age {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  color: #6620cf;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  transition: 500ms ease-in-out;
+}
+
+#name,
+#email::placeholder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+
+#number::placeholder {
+  color: #6620cf;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 0.5em 0.5em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+  width: 25em;
+}
+
+#name:focus {
+  background-color: #6620cf;
+  color: #fff;
+}
+
+#name:focus::placeholder {
+  color: #ffffff61;
+}
+
+#email:focus {
+  background-color: #6620cf;
+  color: #fff;
+}
+
+#email:focus::placeholder {
+  color: #ffffff61;
+}
+
+#number:focus {
+  background-color: #6620cf;
+  color: #fff;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.dropdown-container > select {
+  padding: 0.7em 0.5em;
+  border-radius: 5px;
+  border: none;
+  width: 26em;
+  font-size: 1.1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  color: #6620cf;
+  transition: 500ms ease-in-out;
+}
+select:focus {
+  background-color: #6620cf;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.radio-container {
+  width: 28.5em;
+  margin-top: -1em;
+}
+
+.radios {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: #6620cf;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1em;
+  width: 28.5em;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #6620cf;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 0.7em 0.5em;
+  margin-top: -1em;
+}
+
+textarea {
+  border-radius: 5px;
+  border: none;
+  width: 24em;
+  height: 10em;
+  padding: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #6620cf;
+  transition: 500ms ease-in-out;
+}
+
+textarea:focus {
+  background-color: #6620cf;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button {
+  padding: 0.7em 13em;
+  border-radius: 5px;
+  border: none;
+  /* width: 35em; */
+  height: 3em;
+  outline: none;
+  background-color: #7026c4;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 350ms ease-in-out;
+}
+
+button:hover {
+  background-color: #410a94;
+}
+
+/* breakpoints */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 2em 2em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 20em;
+  }
+
+  .dropdown-container > select {
+    width: 21em;
+  }
+
+  .radio-container {
+    width: 22em;
+  }
+
+  .checkbox-container {
+    width: 22em;
+  }
+
+  .comment-container {
+    width: 22em;
+  }
+
+  button {
+    padding: 0.7em 10em;
+  }
+
+  #description {
+    font-size: 1em;
+  }
+  
+
+  textarea {
+    width: 18.5em;
+  }
+}

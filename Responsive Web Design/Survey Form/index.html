@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="bg-image"></div>
+      <div class="title-container">
+        <div class="heading">
+          <h1 id="title"><span class="linear">Altesc</span>&ensp;Survey Form</h1>
+        </div>
+        <div class="description-container">
+          <p id="description">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </div>
+      </div>
+      <div class="form-container">
+        <form id="survey-form">
+          <div class="inputs-container">
+            <div class="input-name">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="input-email">
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+          </div>
+          <div class="input-age">
+            <label for="number" id="number-label">Age (Optional)</label>
+            <input
+              type="number"
+              min="1"
+              max="100"
+              id="number"
+              name="age"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+          <div class="dropdown-container">
+            <p class="dropdown">
+              What Kind of gamer are you ?
+            </p>
+            <select id="dropdown" name="role" required>
+              <option value="" disabled selected hidden>
+                Select an option
+              </option>
+              <option value="casual">Casual</option>
+              <option value="hardcore">Hardcore</option>
+              <option value="professional">Professional</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="radio-container">
+            <p class="radio-p">
+              Would you recommend Altesc to a friend ?
+            </p>
+            <div class="radios">
+              <div class="radio">
+              <input
+                type="radio"
+                name="recommend"
+                value="definitely"
+                id="definitely"
+                required
+              />
+              <label for="definitely" class="radio-label">Definitely</label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              name="recommend"
+              value="maybe"
+              id="maybe"
+              required
+            />
+            <label for="maybe" class="radio-label">Maybe</label>
+          </div>    
+           <div class="radio">
+            <input
+              type="radio"
+              name="recommend"
+              value="not-sure"
+              id="not-sure"
+              required
+            />
+            <label for="not-sure" class="radio-label">Not sure</label>
+            </div>
+        </div>
+          </div>
+          <div class="checkbox-container">
+              <p class="check-p">
+              What games do you like to play ? (You can choose more than one)
+            </p>
+            <div class="checkboxes">
+              <div class="checkbox">
+              <input
+                type="checkbox"
+                name="game"
+                value="action"
+                id="action"
+              />
+              <label for="action" class="checkbox-label">Action</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="game"
+                  value="adventure"
+                  id="adventure"
+                />
+                <label for="adventure" class="checkbox-label">Adventure</label>
+                </div>
+                 <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="game"
+                    value="rpg"
+                    id="rpg"
+                  />
+                  <label for="rpg" class="checkbox-label">RPG</label>
+                  </div>
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="game"
+                      value="strategy"
+                      id="strategy"
+                    />
+                    <label for="strategy" class="checkbox-label">Strategy</label>
+                    </div>
+                     <div class="checkbox">
+                      <input
+                        type="checkbox"
+                        name="game"
+                        value="puzzle"
+                        id="puzzle"
+                      />
+                      <label for="puzzle" class="checkbox-label">Puzzle</label>
+                      </div>
+                      <div class="checkbox">
+                        <input
+                          type="checkbox"
+                          name="game"
+                          value="sports"
+                          id="sports"
+                        />
+                        <label for="sports" class="checkbox-label">Sports</label>
+                        </div>
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            name="game"
+                            value="other"
+                            id="other"
+                          />
+                          <label for="other" class="checkbox-label">Other</label>
+                          </div>          
+                  </div>
+          </div>
+        <div class="comment-container">
+            <label for="comment" class="label comment">Any comments or suggestions ?</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Enter your comment here"
+              cols="30"
+              rows="10"
+                required
+            ></textarea>
+          </div>
+          <div class="submit-container">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
