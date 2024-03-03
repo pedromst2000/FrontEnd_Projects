@@ -2,7 +2,7 @@
 Projects developed for Free Code Camp.
 All the projects developed it´s for the `certification` projects.
 
-You can check my FreecodeCamp Profile
+### Check out the deploypment and the repo of the Free Code Camp Projects
 
-Check it out!! Click the link below
-[Profile Link](https://www.freecodecamp.org/pedromsTeixeira)
+Survey Form (deploy) - https://surveyformaltesc.netlify.app/
+Survey Form (repo) - https://github.com/pedromst2000/Survey_Form
