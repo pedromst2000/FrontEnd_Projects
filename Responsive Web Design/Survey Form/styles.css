@@ -16,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 h1 {
@@ -302,5 +301,129 @@ button:hover {
 
   textarea {
     width: 18.5em;
+  }
+}
+
+/* mobile large */
+@media (max-width: 425px) {
+  .form-container {
+    padding: 2em 1em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 15em;
+  }
+
+  .dropdown-container > select {
+    width: 16em;
+  }
+
+  .radio-container {
+    width: 17em;
+  }
+
+  .checkbox-container {
+    width: 17em;
+  }
+
+  .comment-container {
+    width: 17em;
+  }
+
+  button {
+    padding: 0.7em 8em;
+  }
+
+  #description {
+    font-size: 0.9em;
+  }
+
+  textarea {
+    width: 14em;
+  }
+}
+
+
+/* mobile medium */
+@media (max-width: 375px) {
+  .form-container {
+    padding: 2em 0.5em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 14em;
+  }
+
+  .dropdown-container > select {
+    width: 15em;
+  }
+
+  .radio-container {
+    width: 16em;
+  }
+
+  .checkbox-container {
+    width: 16em;
+  }
+
+  .comment-container {
+    width: 16em;
+  }
+
+  button {
+    padding: 0.7em 7em;
+  }
+
+  #description {
+    font-size: 0.8em;
+  }
+
+  textarea {
+    width: 13em;
+  }
+}
+
+/* mobile small */
+@media (max-width: 320px) {
+  .form-container {
+    padding: 2em 0.5em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 12em;
+  }
+
+  .dropdown-container > select {
+    width: 13em;
+  }
+
+  .radio-container {
+    width: 14em;
+  }
+
+  .checkbox-container {
+    width: 14em;
+  }
+
+  .comment-container {
+    width: 14em;
+  }
+
+  button {
+    padding: 0.7em 6em;
+  }
+
+  #description {
+    font-size: 0.8em;
+  }
+
+  textarea {
+    width: 11em;
   }
 }

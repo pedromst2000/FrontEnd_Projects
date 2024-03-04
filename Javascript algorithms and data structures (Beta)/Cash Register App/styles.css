@@ -182,3 +182,241 @@ button:hover {
   height: 1.4em;
   border-radius: 50%;
 }
+
+/* -------------------------------------------Responsive Section------------------------------------------------ */
+/* mobile small */
+@media (max-width: 320px) {
+  .container {
+    padding: 0.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #change-due {
+    font-size: 0.8em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input {
+    padding: 0.3em;
+    font-size: 0.8em;
+  }
+
+  button {
+    padding: 0.3em 0.5em;
+    font-size: 0.8em;
+  }
+
+  .price-screen-container {
+    width: 10em;
+    height: 2.5em;
+  }
+
+  #price {
+    padding: 0.3em 2em;
+    font-size: 1em;
+  }
+
+  .connector {
+    width: 2em;
+    height: 2em;
+    margin-right: 8em;
+  }
+
+  .top-cashier {
+    padding: 0.5em 2.9em;
+    gap: 2em;
+  }
+
+  .btns-container {
+    gap: 0.1em;
+  }
+
+  .btn {
+    width: 1em;
+    height: 1em;
+  }
+
+  .right-top {
+    font-size: 0.7em;
+    padding: 1.3em 0.5em;
+    line-height: 1em;
+  }
+
+  .change-title {
+    font-size: 0.8em;
+  }
+
+  .bottom-cashier-container {
+    width: 17em;
+    height: 2.5em;
+  }
+
+  .circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+/* mobile medium */
+@media (min-width: 321px) and (max-width: 378px) {
+  .container {
+    padding: 0.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #change-due {
+    font-size: 0.8em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input {
+    padding: 0.3em;
+    font-size: 0.8em;
+  }
+
+  button {
+    padding: 0.3em 0.5em;
+    font-size: 0.8em;
+  }
+
+  .price-screen-container {
+    width: 10em;
+    height: 2.5em;
+  }
+
+  #price {
+    padding: 0.3em 2em;
+    font-size: 1em;
+  }
+
+  .connector {
+    width: 2em;
+    height: 2em;
+    margin-right: 8em;
+  }
+
+  .top-cashier {
+    padding: 0.5em 2.9em;
+    gap: 2em;
+  }
+
+  .btns-container {
+    gap: 0.1em;
+  }
+
+  .btn {
+    width: 1em;
+    height: 1em;
+  }
+
+  .right-top {
+    font-size: 0.7em;
+    padding: 1.3em 0.5em;
+    line-height: 1em;
+  }
+
+  .change-title {
+    font-size: 0.8em;
+  }
+
+  .bottom-cashier-container {
+    width: 18.7em;
+    height: 2.5em;
+  }
+
+  .circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #change-due {
+    font-size: 1em;
+  }
+
+  label {
+    font-size: 1.3em;
+  }
+
+  input {
+    padding: 0.5em;
+    font-size: 1em;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+
+  .price-screen-container {
+    width: 13em;
+    height: 3em;
+  }
+
+  #price {
+    padding: 0.3em 2.5em;
+    font-size: 1.2em;
+  }
+
+  .connector {
+    width: 2.5em;
+    height: 2.3em;
+    margin-right: 10em;
+  }
+
+  .top-cashier {
+    padding: 1em 2em;
+    gap: 2.4em;
+  }
+
+  .btns-container {
+    gap: 0.2em;
+  }
+
+  .btn {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .right-top {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    line-height: 20%;
+  }
+
+  .change-title {
+    font-size: 1.1em;
+  }
+
+  .bottom-cashier-container {
+    width: 22em;
+    height: 3em;
+  }
+
+  .circle {
+    width: 1.4em;
+    height: 1.4em;
+  }
+}
