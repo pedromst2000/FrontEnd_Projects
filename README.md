@@ -6,3 +6,6 @@ All the projects developed it´s for the `certification` projects.
 
 * Survey Form (deploy) - https://surveyformaltesc.netlify.app/
 * Survey Form (repo) - https://github.com/pedromst2000/Survey_Form
+
+* Cash Register App (deploy) - https://cashregistercode.netlify.app
+* Cash Register App (repo) - https://github.com/pedromst2000/Cash_Register
