@@ -115,3 +115,81 @@ button[type="submit"]:hover{
 .emoji{
     font-size: 1.7em;
 }
+
+/* --------------------------- Responsive Section --------------------------*/
+/* mobile small */
+@media (max-width: 320px) {
+h1.title{
+    font-size: 2em;
+}
+
+.palindrome-container{
+    padding-top: 1em 1em;
+}   
+
+#palindrome-form{
+    min-height: 100%;
+    padding: 1em 0em;
+    gap: 1.5em;
+}
+
+.tips-container{
+    width: 100%;
+    padding: 1em 0.5em;
+    gap: 0.5em;
+    font-size: 0.8em;
+
+}
+}
+
+/* mobile medium */
+@media (min-width: 321px) and (max-width: 376px) {
+h1.title{
+    font-size: 2.1em;
+}
+
+.palindrome-container{
+    padding-top: 1em 1em;
+}
+
+#palindrome-form{
+    min-height: 100%;
+    padding: 1em 0em;
+    gap: 1.5em;
+}
+
+
+.tips-container{
+    width: 100%;
+    padding: 1em 0.5em;
+    gap: 0.5em;
+    font-size: 0.8em;
+
+}
+
+}   
+
+/* mobile large */
+@media (min-width: 377px) and (max-width: 426px) {
+h1.title{
+    font-size: 2.2em;
+}
+
+.palindrome-container{
+    padding-top: 1em 1em;   
+}
+
+#palindrome-form{
+    min-height: 100%;
+    gap: 1.5em;
+}
+
+.tips-container{
+    width: 100%;
+    padding: 1em 0.5em;
+    gap: 0.5em;
+    font-size: 0.8em;
+
+}
+}
+
