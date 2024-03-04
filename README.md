@@ -9,3 +9,6 @@ All the projects developed it´s for the `certification` projects.
 
 * Cash Register App (deploy) - https://cashregistercode.netlify.app
 * Cash Register App (repo) - https://github.com/pedromst2000/Cash_Register
+
+* Palindrome Checker App (deploy) - https://palindromecheckercode.netlify.app
+* Palindrome Checker App (repo) - https://github.com/pedromst2000/Palindrome_Checker
