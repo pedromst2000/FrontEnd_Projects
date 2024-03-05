@@ -12,3 +12,6 @@ All the projects developed it´s for the `certification` projects.
 
 * Palindrome Checker App (deploy) - https://palindromecheckercode.netlify.app
 * Palindrome Checker App (repo) - https://github.com/pedromst2000/Palindrome_Checker
+
+* Pokemon Search App (deploy) - https://pokemonsearchcode.netlify.app
+* Pokemon Search App (repo) - https://github.com/pedromst2000/pokemon_search
