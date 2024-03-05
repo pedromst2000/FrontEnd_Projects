@@ -110,3 +110,117 @@ button:hover {
   justify-content: center;
   flex-wrap: wrap;
 } 
+
+
+/*------------------------- Responsive Section --------------------------- */
+/* mobile small */
+@media (max-width: 320px) {
+  .container {
+    padding: 2em;
+    margin-top: 7em;
+  }
+  .title-container {
+    gap: 1em;
+  }
+  .form-container {
+    gap: 1em;
+  }
+  .label-section {
+    gap: 1em;
+  }
+  .input-section {
+    gap: 1em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  #number {
+    font-size: 1.2em;
+  }
+  button {
+    font-size: 1.2em;
+  }
+  #output {
+    gap: 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+/* mobile medium */
+@media  (min-width: 321px) and (max-width: 376px) {
+  .container {
+    padding: 2em;
+    margin-top: 7em;
+  }
+  .title-container {
+    gap: 1em;
+  }
+  .form-container {
+    gap: 1em;
+  }
+  .label-section {
+    gap: 1em;
+  }
+  .input-section {
+    gap: 1em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  #number {
+    font-size: 1.2em;
+    padding: 0.4em 2em;
+  }
+  button {
+    font-size: 1.2em;
+  }
+  #output {
+    gap: 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+/* mobile large */
+@media  (min-width: 377px) and (max-width: 426px) {
+  .container {
+    padding: 2em;
+    margin-top: 7em;
+  }
+  .title-container {
+    gap: 1em;
+  }
+  .form-container {
+    gap: 1em;
+  }
+  .label-section {
+    gap: 1em;
+  }
+  .input-section {
+    gap: 1em;
+  }
+  label {
+    font-size: 1.3em;
+  }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  #number {
+    font-size: 1.2em;
+    padding: 0 em;
+  }
+  button {
+    font-size: 1.2em;
+  }
+  #output {
+    gap: 1em;
+    padding: 0.5em 1em;
+  }
+}
