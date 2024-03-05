@@ -206,3 +206,127 @@ tr:nth-child(even) {
     transform: rotate(360deg);
   }
 }
+
+
+/*------------------------- Responsive Section---------------------- */
+/* mobile small */
+@media (max-width: 320px) {
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  .label-form-container{
+    font-size: 0.8em;
+  }
+
+  input{
+    font-size: 0.8em;
+  }
+
+  .empty-text{
+    font-size: 0.8em;
+  
+  }
+
+  .bottom-container{
+    padding-top: 0.5em;
+    font-size: 0.8em;
+  }
+
+  .container {
+    padding: .5em;
+  }
+
+  #container {
+    padding: 1em;
+  }
+
+  .top-container {
+    padding: 1em 2em;
+  }
+}
+
+/* mobile medium */
+@media (min-width: 321px) and (max-width: 376px) {
+
+  .container{
+    margin-top: 2em;
+  }
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  .label-form-container{
+    font-size: 0.8em;
+  }
+
+  input{
+    font-size: 0.8em;
+  }
+
+  .empty-text{
+    font-size: 0.8em;
+  
+  }
+
+  .bottom-container{
+    padding-top: 0.5em;
+    font-size: 0.8em;
+  }
+
+  .container {
+    padding: .5em;
+  }
+
+  #container {
+    padding: 1em;
+  }
+
+  .top-container {
+    padding: 1em 2em;
+  }
+}
+
+/* mobile large */
+@media (min-width: 377px) and (max-width: 426px) {
+
+  .container{
+    margin-top: 2em;
+  }
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  .label-form-container{
+    font-size: 0.8em;
+  }
+
+  input{
+    font-size: 0.8em;
+  }
+
+  .empty-text{
+    font-size: 0.8em;
+  
+  }
+
+  .bottom-container{
+    padding-top: 0.5em;
+    font-size: 0.8em;
+  }
+
+  .container {
+    padding: .5em;
+  }
+
+  #container {
+    padding: 1em;
+  }
+
+  .top-container {
+    padding: 1em 2em;
+  }
+}
