@@ -146,3 +146,50 @@ h1 {
   width: 160%;
   text-align: center;
 }
+
+/*----------------------------- Responsive Section ----------------------- */
+/* mobile small */
+@media (max-width: 320px) {
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+/* mobile medium */
+@media (min-width: 321px) and (max-width: 376px) {
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+}
+
+/* mobile large*/
+@media (min-width: 377px) and (max-width: 426px) {
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .phone-background {
+    padding: 1em 2.4em;
+  }
+
+  .screen-container {
+    width: 16em;
+    height: 24em;
+  }
+
+}
