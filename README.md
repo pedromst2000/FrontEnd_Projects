@@ -18,3 +18,6 @@ All the projects developed it´s for the `certification` projects.
 
 * Convert to Roman App (deploy) - https://converttoromancode.netlify.app
 * Convert to Roman App (repo) - https://github.com/pedromst2000/Convert_to_Roman
+
+* Telephone US Number Validator App (deploy) - https://usnumberphonevalid.netlify.app
+* Telephone US Number Validator App (repo) -  https://github.com/pedromst2000/Telephone_US_Number_Validator
