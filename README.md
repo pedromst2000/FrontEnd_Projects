@@ -1,8 +1,8 @@
 # FreeCodeCamp_Projects
-Projects developed for Free Code Camp.
-All the projects developed it´s for the `certification` projects.
+`FE` (Front-End) Projects developed for `FreeCodeCamp` or personal demo projects eg: Landing Pages with `responsive design` layouts
+Some projects are developed for the `certification` projects (FreeCodeCamp)
 
-### Check out the deploypment and the repo of the Free Code Camp Projects
+### Check out the deploypment and the repo of the Projects Developed
 
 * Survey Form (deploy) - https://surveyformaltesc.netlify.app/
 * Survey Form (repo) - https://github.com/pedromst2000/Survey_Form
