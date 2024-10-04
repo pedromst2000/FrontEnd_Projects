@@ -1,6 +1,6 @@
-# FreeCodeCamp_Projects
-`FE` (Front-End) Projects developed for `FreeCodeCamp` or personal demo projects eg: Landing Pages with `responsive design` layouts
-Some projects are developed for the `certification` projects (FreeCodeCamp)
+# FrontEnd_Projects
+`FE` (Front-End) Projects developed for `FreeCodeCamp` or personal demo projects with `responsive design` layouts.
+Some projects are developed for the `certification` projects (FreeCodeCamp).
 
 ### Check out the deploypment and the repo of the Projects Developed
 
